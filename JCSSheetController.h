@@ -15,7 +15,11 @@ typedef void (^JCSCompletionHandler)(NSUInteger result);
 @interface JCSSheetController : NSWindowController {
 @private
     JCSCompletionHandler handler;
+    
+    NSViewController    *_contentViewController;
 }
+
+@property(nonatomic, retain) NSViewController *contentViewController;
 
 - (void)beginSheetModalForWindow:(NSWindow *)window completionHandler:(JCSCompletionHandler)aHandler;
 

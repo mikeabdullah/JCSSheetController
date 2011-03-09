@@ -12,7 +12,24 @@
 - (void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSUInteger)returnCode contextInfo:(void *)contextInfo;
 @end
 
+
+#pragma mark -
+
+
 @implementation JCSSheetController
+
+#pragma mark Content View Controller
+
+@synthesize contentViewController = _contentViewController;
+- (void)setContentViewController:(NSViewController *)viewController;
+{
+    [viewController retain];
+    [_contentViewController release]; _contentViewController = viewController;
+    
+    [[self window] setContentView:[viewController view]];
+}
+
+#pragma mark Presentation
 
 @synthesize handler;
 
