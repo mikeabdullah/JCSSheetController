@@ -26,7 +26,7 @@
     [viewController retain];
     [_contentViewController release]; _contentViewController = viewController;
     
-    [[self window] setContentView:[viewController view]];
+    if ([self isWindowLoaded]) [[self window] setContentView:[viewController view]];
 }
 
 - (void)loadWindow;
