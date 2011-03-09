@@ -19,7 +19,7 @@
 - (void)beginSheetModalForWindow:(NSWindow *)window completionHandler:(JCSCompletionHandler)aHandler {
     self.handler = aHandler;
     
-    [self sheetWillDisplay];
+    [self sheetWillAppear];
     
     [NSApp beginSheet:self.window modalForWindow:window modalDelegate:self didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) contextInfo:NULL];
 }
@@ -28,7 +28,7 @@
     [NSApp endSheet:[self window] returnCode:result];
 }
 
-- (void)sheetWillDisplay {
+- (void)sheetWillAppear {
     // Default does nothing.
     // Convenience for subclasses to override.
 }

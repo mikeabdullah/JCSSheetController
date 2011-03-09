@@ -39,7 +39,7 @@
 // Mark: -
 // Mark: Superclass overrides
 
-- (void)sheetWillDisplay {
+- (void)sheetWillAppear {
     NSLog(@"ExampleSheet will display");
 }
 

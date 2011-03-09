@@ -21,6 +21,6 @@ typedef void (^JCSCompletionHandler)(NSUInteger result);
 
 // Convenience methods for subclasses to use
 - (void)endSheetWithReturnCode:(NSUInteger)result;
-- (void)sheetWillDisplay; // Default does nothing
+- (void)sheetWillAppear; // Default does nothing
 
 @end
