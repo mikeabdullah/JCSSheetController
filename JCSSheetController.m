@@ -8,6 +8,7 @@
 #import "JCSSheetController.h"
 
 @interface JCSSheetController ()
+@property (nonatomic, copy) JCSCompletionHandler handler;
 - (void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSUInteger)returnCode contextInfo:(void *)contextInfo;
 @end
 

@@ -16,7 +16,6 @@ typedef void (^JCSCompletionHandler)(NSUInteger result);
 @private
     JCSCompletionHandler handler;
 }
-@property (nonatomic, copy) JCSCompletionHandler handler;
 
 - (void)beginSheetModalForWindow:(NSWindow *)window completionHandler:(JCSCompletionHandler)aHandler;
 
