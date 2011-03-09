@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2754F11F1327C7A500A28811 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE21B40D130FD5F100F5B766 /* Info.plist */; };
+		2754F1331327CA3300A28811 /* ExampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2754F1321327CA3300A28811 /* ExampleView.xib */; };
+		2754F1381327CAEA00A28811 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2754F1371327CAEA00A28811 /* ViewController.m */; };
 		EE21B406130FD5F100F5B766 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE21B405130FD5F100F5B766 /* Cocoa.framework */; };
 		EE21B410130FD5F100F5B766 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE21B40E130FD5F100F5B766 /* InfoPlist.strings */; };
 		EE21B413130FD5F100F5B766 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE21B412130FD5F100F5B766 /* main.m */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2754F1321327CA3300A28811 /* ExampleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleView.xib; sourceTree = "<group>"; };
+		2754F1361327CAEA00A28811 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2754F1371327CAEA00A28811 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EE21B401130FD5F100F5B766 /* JCSSheetController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCSSheetController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE21B405130FD5F100F5B766 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		EE21B408130FD5F100F5B766 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -95,6 +101,8 @@
 				EE21B418130FD5F100F5B766 /* AppDelegate.m */,
 				EE3E4A9F1310177900749DEC /* SheetController.h */,
 				EE3E4AA01310177900749DEC /* SheetController.m */,
+				2754F1361327CAEA00A28811 /* ViewController.h */,
+				2754F1371327CAEA00A28811 /* ViewController.m */,
 				EE86722A130FD8050016C1BF /* Resources */,
 				EE21B40C130FD5F100F5B766 /* Supporting Files */,
 			);
@@ -118,6 +126,7 @@
 			children = (
 				EE21B41A130FD5F100F5B766 /* MainMenu.xib */,
 				EEDC3A0B13102DA1001C46D2 /* ExampleSheet.xib */,
+				2754F1321327CA3300A28811 /* ExampleView.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -185,6 +194,8 @@
 				EE21B416130FD5F100F5B766 /* Credits.rtf in Resources */,
 				EE21B41C130FD5F100F5B766 /* MainMenu.xib in Resources */,
 				EEDC3A0C13102DA1001C46D2 /* ExampleSheet.xib in Resources */,
+				2754F11F1327C7A500A28811 /* Info.plist in Resources */,
+				2754F1331327CA3300A28811 /* ExampleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +210,7 @@
 				EE21B419130FD5F100F5B766 /* AppDelegate.m in Sources */,
 				EE86722E130FD8460016C1BF /* JCSSheetController.m in Sources */,
 				EE3E4AA11310177900749DEC /* SheetController.m in Sources */,
+				2754F1381327CAEA00A28811 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

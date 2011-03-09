@@ -12,6 +12,7 @@ static NSString * const kCancelString = @"Cancel button";
 
 #import "AppDelegate.h"
 #import "SheetController.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 
@@ -39,6 +40,25 @@ static NSString * const kCancelString = @"Cancel button";
         }
     }];
     
+}
+
+- (IBAction)showView:(id)sender;
+{
+    ViewController *viewController = [[ViewController alloc] init];
+    
+    JCSSheetController *mySheetController = [[JCSSheetController alloc] init];
+    [mySheetController setContentViewController:viewController];
+    [viewController release];
+    
+    [mySheetController beginSheetModalForWindow:self.window completionHandler:^(NSUInteger returnCode) {
+        if (returnCode == kSheetReturnedOk) {
+            self.displayString = kOkString;
+        } else if (returnCode == kSheetReturnedCancel) {
+            self.displayString = kCancelString;
+        } else {
+            self.displayString = @"Oops!";
+        }
+    }];
 }
 
 @end

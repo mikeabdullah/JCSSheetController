@@ -22,5 +22,6 @@
 
 
 - (IBAction)showSheet:(id)sender;
+- (IBAction)showView:(id)sender;
 
 @end
