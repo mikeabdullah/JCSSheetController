@@ -29,6 +29,29 @@
     [[self window] setContentView:[viewController view]];
 }
 
+- (void)loadWindow;
+{
+    if (![[self windowNibName] length] && [self contentViewController])
+    {
+        // Create a window for the content view
+        NSWindow *window = [[NSWindow alloc] initWithContentRect:[[[self contentViewController] view] frame]
+                                                       styleMask:NSTitledWindowMask | NSResizableWindowMask
+                                                         backing:NSBackingStoreBuffered
+                                                           defer:YES];
+        
+        [window setContentView:[[self contentViewController] view]];
+        [self setWindow:window];
+        [window release];
+    }
+    else
+    {
+        [super loadWindow];
+    }
+}
+
+// If nib name is nil, bizarrely, -loadWindow doesn't get called
+- (id)init; { return [self initWithWindowNibName:@""]; }
+
 #pragma mark Presentation
 
 @synthesize handler;

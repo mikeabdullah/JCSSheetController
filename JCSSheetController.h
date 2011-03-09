@@ -19,6 +19,7 @@ typedef void (^JCSCompletionHandler)(NSUInteger result);
     NSViewController    *_contentViewController;
 }
 
+// If a window/nib has been provided, this will replace its content view. If not, a window will be created on-demand
 @property(nonatomic, retain) NSViewController *contentViewController;
 
 - (void)beginSheetModalForWindow:(NSWindow *)window completionHandler:(JCSCompletionHandler)aHandler;
